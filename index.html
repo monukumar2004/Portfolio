@@ -1,0 +1,282 @@
+6<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monu Kumar - Portfolio</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/QvmxvDz3/6e098dd3-a2f7-4d04-9130-b9952be96389.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <div class="floating-elements" id="floatingElements"></div>
+    <nav id="mainNav">
+        <div class="container nav-container">
+            <a href="#" class="logo">Monu Kumar</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#education">Education</a>
+                <a href="#journey">Experience & Projects</a>
+                <a href="#skills">Skills</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home" onclick="closeMobileMenu()">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <a href="#education" onclick="closeMobileMenu()">
+                <i class="fas fa-graduation-cap"></i> Education
+            </a>
+            <a href="#journey" onclick="closeMobileMenu()">
+                <i class="fas fa-road"></i> Experience
+            </a>
+            <a href="#skills" onclick="closeMobileMenu()">
+                <i class="fas fa-code"></i> Skills
+            </a>
+        </div>
+
+        <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1>Hey! I am <span>Monu Kumar</span></h1>
+                    <p>A B.Tech Computer Science and Engineering student specializing in Big Data Analytics. I focus on full-stack development, data analysis, and building efficient, scalable applications.</p>
+                    <a href="#journey" class="cta-button">Explore My Work</a>
+                </div>
+                <div class="hero-visual fade-in">
+                    <div class="floating-card">
+                        <div class="card-content">
+                            <div class="profile-avatar">
+                                <img src="C:\Users\monuk\Desktop\Portfoliov2-main\pro.jpeg" alt="Profile Image">
+                            </div>
+                            <h3>Monu Kumar</h3>
+                            <p>Computer Science Engineer</p>
+                            <div class="location-chip">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Punjab, India</span>
+                            </div>
+                            <div
+                                style="margin-top: 20px; padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; width: 100%;">
+                                <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>Current Status:</strong></p>
+                                <p style="font-size: 1.2rem; font-weight: 600; color: var(--accent);">B.Tech Student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <a href="#education">
+                <i class="fas fa-chevron-down"></i>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Education</h2>
+                <p>My academic background and qualifications.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="glass-card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="card-title">B.Tech in Computer Science</h3>
+                    <p>Currently pursuing my Bachelor of Technology at Lovely Professional University, Punjab. Maintaining a CGPA of 7.0.</p>
+                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 10px; height: 10px; background: var(--accent); border-radius: 50%;"></div>
+                        <span>Status: <strong>Aug 2023 - Present</strong></span>
+                    </div>
+                </div>
+
+                <div class="glass-card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3 class="card-title">Intermediate (12th Grade)</h3>
+                    <p>Completed my higher secondary education at S.N.S College in Jehanabad, Bihar, graduating with a score of 76.8%.</p>
+                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 10px; height: 10px; background: var(--primary); border-radius: 50%;"></div>
+                        <span>Timeline: <strong>Apr 2022 - Mar 2023</strong></span>
+                    </div>
+                </div>
+
+                <div class="glass-card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3 class="card-title">Matriculation (10th Grade)</h3>
+                    <p>Completed my foundational education at R.N.S High School in Arwal, Bihar, achieving an excellent score of 81%.</p>
+                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 10px; height: 10px; background: var(--secondary); border-radius: 50%;"></div>
+                        <span>Timeline: <strong>Apr 2020 - Mar 2021</strong></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="journey">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Experience & Projects</h2>
+                <p>A timeline of my hands-on development experience, training, and academic projects.</p>
+            </div>
+
+            <div class="journey-timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-content">
+                        <h3 style="margin-bottom: 10px; color: white;">IBM Skill-Build Big Data Analytics</h3>
+                        <p>Completed an intensive Big Data Analytics training program (Jun - Jul '25) covering Power BI, Tableau, and Cognos. Built responsive web applications with modern UI/UX and gained hands-on experience with version control workflows.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-content">
+                        <h3 style="margin-bottom: 10px; color: white;">Algorithmic Problem Solving</h3>
+                        <p>Solved over 200+ coding questions across various platforms like LeetCode, GeeksforGeeks, HackerRank, and CodeChef to sharpen my data structures and algorithm skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3 style="margin-bottom: 10px; color: white;">Restaurant Management Web App</h3>
+                        <p>Assembled a full-stack communication hub (Nov '23). Implemented secure authentication using JWT and bcrypt.js. Utilized Flask, REST APIs, and cloud deployment (AWS EC2, MongoDB Atlas) for seamless backend data flow.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3 style="margin-bottom: 10px; color: white;">Air Quality Monitoring System</h3>
+                        <p>Developed an IoT system (Nov '23) using Arduino and LDR sensors to continuously detect air quality. Integrated dual-axis servo motors to optimize orientation, ensuring maximum efficiency with minimal power consumption.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Technical Skills</h2>
+                <p>Languages, frameworks, and tools I use to build robust applications.</p>
+            </div>
+
+            <div class="skills-container">
+
+                <div class="skill-category fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <h3 style="color: white; margin-bottom: 5px;">Languages</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Core programming logic</p>
+                        </div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">C</div>
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                    </div>
+                    <p style="margin-top: 20px;">I have a strong foundation in Object-Oriented Programming and Data Structures, leveraging these languages to write optimized and scalable code.</p>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div>
+                            <h3 style="color: white; margin-bottom: 5px;">Frameworks & Libraries</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Full-stack development</p>
+                        </div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Express</div>
+                        <div class="skill-item">Bootstrap</div>
+                        <div class="skill-item">Tailwind</div>
+                    </div>
+                    <div style="margin-top: 20px; padding: 15px; background: rgba(99, 102, 241, 0.1); border-radius: 10px;">
+                        <p style="font-size: 0.9rem; color: white;">Capable of building responsive, user-friendly frontend interfaces as well as secure and powerful backend architectures.</p>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div>
+                            <h3 style="color: white; margin-bottom: 5px;">Data & Tools</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Cloud, Analytics & AI</p>
+                        </div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">OpenCV</div>
+                        <div class="skill-item">TensorFlow</div>
+                        <div class="skill-item">scikit-learn</div>
+                        <div class="skill-item">Power BI</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">AWS</div>
+                    </div>
+                    <p style="margin-top: 20px;">Experienced with machine learning tools, data visualization platforms, version control (Git), and modern cloud infrastructure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h2 style="font-size: 1.8rem; margin-bottom: 10px; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; color: transparent;">
+                        <a href="https://github.com/Monu-Kumar" style="text-decoration: none; color: inherit;">Monu Kumar</a></h2>
+                    <p style="color: var(--gray);">B.Tech CSE Student | Big Data Analytics</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Monu-Kumar" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/monukumar" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:monukumar1622005@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script> <b>Monu Kumar</b>, All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
